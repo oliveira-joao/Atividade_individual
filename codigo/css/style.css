@@ -5,39 +5,11 @@ body {
     margin: 0;
         /* SÓ COLOCAR QUANDO COLOCAR COR NO HEADER */
     background-color: #bf7788;
-    background-image: url(../img/flowers_bg.jpg);
+    background-image: url(../img/fundo-login.gif);
     background-size: cover;
     background-position: fixed;
 
 }
-
-.btn-index {
-    color: white;
-    background-color:  #bf7788;
-    border: 0;
-    padding: 10px 20px;
-
-    border-radius: 5px;
-    cursor: pointer;
-
-    font-family: consolas, monospace;
-}
-
-.container { 
-    width: 80%;
-    margin: auto;
-}
-
-h1 {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* CABEÇALHO */
 
 .header
     {
@@ -101,6 +73,33 @@ a {
     padding: 0px 20px 0 20px;
 }
 
+.btn-index {
+    color: white;
+    background-color:  #bf7788;
+    border: 0;
+    padding: 10px 20px;
+
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-family: consolas, monospace;
+}
+
+.container { 
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 /* JUMBOTRON 
     aka BANNER */
 
@@ -156,7 +155,7 @@ a {
 }
 
 .novidades button {
-    background-color:  #bf7788;
+    background-color:  #008037;
     border: 0;
     height: 38px;
     padding: 0 20px;
@@ -187,16 +186,17 @@ a {
 /* FOOTER */
 
 .footer {
-    background-color:  #bf7788;
+    background-color: rgb(10, 10, 10);
     text-align: center;
-    height: 100px;
+    bottom: 0;
 }
 
 .footer h4 {
     color: white;
     font-weight: 100;
     margin: 0;
-    padding-top: 40px;
+    padding-top: 3%;
+    padding-bottom: 2%;
 }
 
 /* SOBRE - ASSUNTOS */

@@ -120,7 +120,7 @@ body{
 
   .tela-inicio{
     
-    background: url(../imagens/fundo-inicio.png) bottom no-repeat;
+    background: url(../img/fundo-inicio.png) bottom no-repeat;
     background-size: cover;
     color: white;
     text-align: center;

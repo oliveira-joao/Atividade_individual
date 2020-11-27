@@ -4,75 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proj. Individual | Meu nome aqui</title>
-    <link rel="stylesheet" href="css/novostyle.css">
-    <link rel="stylesheet" href="css/cadastrologin.css">
+    <link rel="sortcut icon" href="./img/favicon.png" type="image/jpg" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contato-e-login.css">
     <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!--header inicio-->
     <div class="header">
         <div class="title-header">
-            <img class="logo-imagem" src="./imagens/b.png" alt="BandFy">
+            <img class="logo-imagem" src="./img/b.png" alt="BandFy">
             <a href="#inicio">
                 <h1>Jotave Music</h1>
             </a>
         </div>
         <div class="nav">
             <ul>
-                <li><a href="#inicio">Inicio</a> </li>
+                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#valores">Valores</a></li>
                 <li><a href="#equipe">Equipe</a></li>
             </ul>
         </div>
-        <div class="login">
-            <div class="continuacao-login" name="drop"> <img src="./imagens/login.png" alt=""></div>
-            <div class="drop-content">
-                <a href="meu_cadastro.html">Cadastro</a>
-                <a href="login.html">Login</a>
+    </div>
+    <div class="tela-login">
+        <div class="box-login">
+        <h1>Login</h1>
+        <form id="form_login" method="post" onsubmit="return entrar()">
+            Usuário:
+            <input type="text" class="input-padrao" name="login">
+            <br>
+            Senha:
+            <input type="password" class="input-padrao" name="senha">
+            <br>
+            <button id="btn_entrar" class="btn">Entrar</button>
+        </form>
+
+        <div class="extra">
+            <div id="div_erro" class="msg_erro">
             </div>
+
+            <img src="img/carregando.gif" id="img_aguarde">
+
         </div>
     </div>
-    <!--header fim-->
-
-    <div class="pag-login">
-        <div class="container">
-            <div class="box-login">
-                <h1>Login</h1>
-
-
-
-                <form id="form_login" method="post" onsubmit="return entrar()">
-                    Usuário:
-                    <input type="text" class="input-padrao" name="login">
-                    <br>
-                    Senha:
-                    <input type="password" class="input-padrao" name="senha">
-                    <br>
-                    <button id="btn_entrar" class="btn">Entrar</button>
-                </form>
-
-                <div class="extra">
-                    <div id="div_erro" class="msg_erro">
-                    </div>
-
-                    <img src="img/carregando.gif" id="img_aguarde"  >
-                    
-                </div>
-            </div>
-        </div>
     </div>
-
-    <!--footer inicio-->
+    
+    </div>
+    </div>
     <div class="footer">
         <div class="container">
-            <h4>Feito com <i class="far fa-heart"></i> por um aluno BandTec &COPY; 2020</h4>
+            <h4>Feito por João Oliveira &COPY; 2020</h4>
         </div>
     </div>
-    <!--footer fim-->
-
 </body>
 
 </html>
