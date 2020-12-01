@@ -1,7 +1,8 @@
 /* PÁGINA DO CONTATO */
 
 .contato {
-    background-color: #F8FCFFbe;
+    width: 450px;
+    height: 91vh;
 }
 
 .contato .container {
@@ -15,7 +16,7 @@
 
 .formulario {
     float: left;
-    width: 500px;
+    width: 360px;
 }
 
 form label, form p{
@@ -36,11 +37,6 @@ form label, form p{
     cursor: pointer;
 
     font-family: consolas, monospace;
-}
-
-.imagem-lateral {
-    width: 300px;
-    overflow: auto;
 }
 
 .contato img {
@@ -65,7 +61,8 @@ form label, form p{
 /* PÁGINA DO LOGIN */
 
 .tela-login{
-    height: 89vh;
+    width: 100wh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -87,6 +84,12 @@ form label, form p{
 .box-login h1{
     margin-bottom: 8%;
     text-transform: uppercase;
+}
+
+.box-login h2{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin-top: -15px;
 }
 
 .box-login .btn {

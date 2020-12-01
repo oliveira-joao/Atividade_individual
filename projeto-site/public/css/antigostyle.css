@@ -196,3 +196,18 @@ body{
     align-items: center;
     justify-content: center;
   }
+
+
+  .footer {
+    background-color: rgb(10, 10, 10);
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer h4 {
+    color: white;
+    font-weight: 100;
+    margin: 0;
+}
