@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proj. Individual | Meu nome aqui</title>
+    <link rel="sortcut icon" href="./img/favicon.png" type="image/jpg" />
+    <title>Musicas</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="funcoes.js"></script>
@@ -19,28 +20,27 @@
 <body onload="verificar_autenticacao()">
     <!--header inicio-->
     <div class="header">
-        <div class="container">
-            <h1 class="titulo">meu <span class="highlight">projeto</span> individual</h1>
-            <div class="nav">
-                <ul>
-                    <li>Olá, <b id="b_usuario"></b></li>
-                    <li><a href="" onclick="logoff()">LOGOUT</a></li>
-                </ul>
-            </div>
+        <div class="title-header">
+            <img class="logo-imagem" src="./img/b.png" alt="BandFy">
+            <a href="#inicio">
+                <h1>Jotave Music</h1>
+            </a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li>Olá, <b id="b_usuario"></b></li>
+                <li><a href="" onclick="logoff()">LOGOUT</a></li>
+            </ul>
         </div>
     </div>
-    <!--header fim-->
 
     <!-- assuntos inicio -->
     <div class="assuntos">
         <div class="container">
+                <img src="./img/lola.jpg" alt="Foto no show">
             <div class="assunto">
-                <h2>Assunto 1</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
-            </div>
-            <div class="assunto">
-                <h2>Assunto 2</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
+                <h2>Show Lollapalooza</h2>
+                <p>Show que fui em 2019 com minha irmã e vi artistas de que gosto muito, foi muito importante pra mim e uma das melhores memórias que tenho, simplesmente incrível.</p>
             </div>
         </div>
     </div>
@@ -52,29 +52,14 @@
             <h2>Minhas inspirações</h2>
             <div class="integrantes">
                 <div class="integrante">
-                    <img src="img/av1.png">
-                    <h4>um ídolo aqui</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <img src="img/lp.jpg">
+                    <h4>Linkin Park</h4>
+                    <p>Minha banda favorita, fez muito sucesso principalmente em 2002, ano em que nasci.</p>
                 </div>
                 <div class="integrante">
-                    <img src="img/av2.png">
-                    <h4>um ídolo aqui</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="integrante">
-                    <img src="img/av3.png">
-                    <h4>um ídolo aqui</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="integrante">
-                    <img src="img/av4.png">
-                    <h4>um ídolo aqui</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="integrante">
-                    <img src="img/av5.png">
-                    <h4>um ídolo aqui</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <img src="img/eminem.jpg">
+                    <h4>Eminem</h4>
+                    <p>Apesar de todas as polemicas, meu cantor favorito, fez muito sucesso também na epoca em que nasci porém continua até hoje.</p>
                 </div>
             </div>
         </div>
@@ -84,9 +69,17 @@
      <!-- assuntos inicio -->
     <div class="assuntos">
         <div class="container">
-            <div class="assunto-grande">
-                <h2>Assunto 3</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
+            <input type="text" placeholder="Insira o nome da música" id="musica">
+            <input type="text" placeholder="Insira o nome do cantor" id="cantor">
+            <input type="text" placeholder="Insira o link da imagem" id="foto"> <br>
+            <button onclick="teste()">Adicionar</button> <br>
+            <div class="todos-cards" id="todoscards" style="display: none;">
+            <div class="card" id="card">
+                <img id="imagem" src="" alt="">
+                <div class="conteiner">
+                    <h4 id="nomeCantor"></h4>
+                    <p id="nomeMusica"></p>
+                </div>
             </div>
         </div>
     </div>
@@ -95,10 +88,18 @@
      <!--footer inicio-->
     <div class="footer">
         <div class="container">
-            <h4>Feito com <i class="far fa-heart"></i> por um aluno BandTec &COPY; 2020</h4>
+            <h4>Feito por João Oliveira &COPY; 2020</h4>
         </div>
     </div>
     <!--footer fim-->
 </body>
 </html>
-
+    
+<script>
+    function teste(){
+        todoscards.style.display = `block`;
+        imagem.src = `${foto.value}`;
+        nomeCantor.innerHTML = '<h4>' + cantor.value + '</h4>';
+        nomeMusica.innerText = musica.value;
+    }
+</script>

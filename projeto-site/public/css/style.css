@@ -4,7 +4,7 @@ body {
         /* SÓ COLOCAR QUANDO COLOCAR COR NO HEADER */
     margin: 0;
         /* SÓ COLOCAR QUANDO COLOCAR COR NO HEADER */
-    background-color: #bf7788;
+    background-color:  #00F269;
     background-image: url(../img/fundo-login.gif);
     background-size: cover;
     background-position: fixed;
@@ -71,11 +71,12 @@ body {
 .nav li {
     display: inline-block;
     padding: 0px 20px 0 20px;
+    color: #ffffff;
 }
 
 .btn-index {
     color: white;
-    background-color:  #bf7788;
+    background-color:   #00F269;
     border: 0;
     padding: 10px 20px;
 
@@ -89,6 +90,42 @@ body {
     width: 80%;
     margin: auto;
 }
+
+.conteiner{
+    align-items: center;
+    justify-content: center;
+}
+
+.todos-cards{
+    margin-top: 50px;
+    padding-left: 38%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.card {
+    color:  #008037;
+    background-color: rgb(34, 31, 31);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 250px;
+    height: 450px;
+  }
+
+.card img{
+    width: 250px;
+}
+
+.card h4, p{
+    text-align: center;
+}
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(70, 80, 90, 0.2);
+    transition: 0.5s;
+    transform:scale(1.1);
+  }
 
 h1 {
     margin: 0;
@@ -123,7 +160,7 @@ a {
 
 .banner .titulo {
     font-size: 48px;
-    color:  #bf7788;
+    color:   #00F269;
 }
 
 /* NOVIDADES */
@@ -204,16 +241,13 @@ a {
 .assuntos {
     background-color:#232323;
     overflow: auto;
-    padding-top: 30px;
+    padding-top: 105px;
     text-align: center;
-    padding-bottom: 50px; /*aqui oh a diferença entre padding e margin*/
-    color:  #bf7788
+    color: #00F269;
 }
 
 .assuntos .assunto {
-    border-bottom: 3px solid #bf7788;
-    background-color: white;
-    padding: 50px 5px;
+    padding: 80px 5px;
     float: left;
     width: 450px;
     margin-left: 55px; 
@@ -227,6 +261,7 @@ a {
 
 .assuntos p {
     line-height: 1.5;
+    color: #ffffff;
 }
 
 /* SOBRE - INTEGRANTES */
@@ -250,6 +285,7 @@ a {
     overflow: auto;
     margin-top: 30px;
     padding-bottom: 35px;
+    padding-left: 20%;
 }
 
 
@@ -258,21 +294,22 @@ a {
     width: 180px;
     float: left;
     padding: 5px;
-    margin-left: 20px;
+    margin-left: 60px;
     line-height: 1.5;
 }
 
 .nosso-time .integrante img {
-    height: 100px;
-    background-color:  #bf7788;
-    border-radius: 50%;
+    width: 200px;
+    height: 150px;
+    background-color:   #00F269;
+    border-radius: 15%;
     padding: 10px;
 }
 
 /* ASSUNTO GRANDE */
 
 .assuntos .assunto-grande {
-    border-bottom: 3px solid  #bf7788;
+    border-bottom: 3px solid   #00F269;
     background-color: white;
     padding: 50px 30px;
     float: left;
@@ -281,5 +318,5 @@ a {
 }
 
 #b_usuario {
-    color: #bf7788
+    color:#00F269;
 }
