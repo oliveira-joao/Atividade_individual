@@ -264,6 +264,16 @@ a {
     color: #ffffff;
 }
 
+.lolinha{
+    width: 400px;
+    border-radius: 10px;
+}
+
+.img_aguarde{
+    width: 45px;
+    height: 45px;
+}
+
 /* SOBRE - INTEGRANTES */
 
 .nosso-time {
